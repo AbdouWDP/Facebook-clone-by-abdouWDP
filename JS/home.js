@@ -316,7 +316,7 @@ function showComments(postId) {
                 <div class="comment-name" onclick="getProfileId(${
                   c.author.id
                 })">
-                  <h3>${c.author.name}</h3>
+                  <h3>${c.author.username}</h3>
                   <p class="author">${
                     c.author.username == author ? "Author" : ""
                   }</p>
