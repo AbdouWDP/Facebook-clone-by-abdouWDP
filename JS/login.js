@@ -27,21 +27,14 @@ close_btn.addEventListener("click", () => {
 const baseurl = "https://tarmeezacademy.com/api/v1";
 
 signup_btn.addEventListener("click", () => {
-  let formData = new FormData();
-  formData.append("name", signup_name.value);
-  formData.append("username", signup_username.value);
-  formData.append("password", signup_password.value);
-  console.log(formData);
-  axios
-    .post(baseurl + "/register", formData, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    })
-    .then((res) => {
-      console.log(res);
-      location.href = "/HTML/home.html";
-    });
+  let params = {
+    name: signup_name.value,
+    username: signup_username.value,
+    password: signup_password.value,
+  };
+  axios.post(baseurl + "/register", params).then((res) => {
+    location.href = "/HTML/home.html";
+  });
 });
 
 login_btn.addEventListener("click", () => {
