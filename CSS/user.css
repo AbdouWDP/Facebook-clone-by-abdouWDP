@@ -440,7 +440,10 @@ main {
     font-size: 32px;
   }
   .all-posts {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0;
   }
   .back-btn {
     left: 2px;
