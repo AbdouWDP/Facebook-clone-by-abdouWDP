@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="stylesheet" href="/CSS/home.css" />
+    <script
+      src="https://kit.fontawesome.com/38bd4d5857.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="show"></div>
+    <main class="main-page">
+      <!-- Close comment button -->
+      <div class="close-comment-section"><i class="fa-solid fa-xmark"></i></div>
+      <!-- Close comment button -->
+
+      <!-- Post added successfully -->
+      <div class="post-added">
+        <p>Your post has been added successfully</p>
+      </div>
+      <!-- Post added successfully -->
+
+      <!-- Logout button -->
+      <button id="logout-button">Logout</button>
+      <!-- End logout button -->
+
+      <!-- Start add post section -->
+
+      <div id="add-post">
+        <div class="first-half">
+          <div></div>
+          <div class="add-post-title">
+            <h1>Create a post</h1>
+          </div>
+          <div class="close-add-post">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+        </div>
+        <div class="second-half">
+          <div class="input-text">
+            <textarea
+              type="text"
+              class="post-add-content"
+              placeholder="What is new ?"
+            >
+            </textarea>
+          </div>
+          <div class="post-image">
+            <i class="fa-solid fa-image"></i>
+            <input
+              type="file"
+              class="add-image-file"
+              accept="image/jpeg, image/png, image/jpg"
+            />
+          </div>
+          <div id="publish">
+            <button id="publish-btn">publish</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- End add post section -->
+
+      <!-- Start profile section -->
+
+      <div id="profile">
+        <a href="#"
+          ><img src="/imgs/defaultProfile.jpg" alt="" id="profile-image"
+        /></a>
+      </div>
+
+      <!-- End profile section -->
+
+      <!-- Start create post section -->
+
+      <div class="create-post">
+        <div class="profile-picture">
+          <a href="#">
+            <img src="/imgs/defaultProfile.jpg" alt="" id="profile-pic" />
+          </a>
+        </div>
+        <div type="text" class="post-input">What is new ?</div>
+      </div>
+
+      <!-- End create post section -->
+
+      <!-- Start posts section -->
+
+      <div class="posts">
+        <span class="loader"></span>
+        <!-- <div id="post">
+          <div class="user-info">
+            <div class="profile-picture user-pic">
+              <a href="user.html"
+                ><img
+                  src="/imgs/default profile.jpg"
+                  alt=""
+                  id="post-profile-img"
+              /></a>
+            </div>
+            <div class="user-name">
+              <a href="user.html">Facebook</a>
+              <div class="post-date">20/15/2003</div>
+            </div>
+            <div class="post-buttons">
+              <button class="choose-button">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+              <div class="buttons">
+                <span class="update-post">
+                  <i class="fa-solid fa-arrows-rotate"></i>
+                  <span>Update post</span>
+                </span>
+                <span class="delete-post">
+                  <i class="fa-solid fa-trash"></i>
+                  <span>Delete post</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="post-content">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim,
+              sequi? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Vitae, quae?
+            </p>
+          </div>
+
+          <div class="post-img">
+            <img src="/imgs/paper.jpg" alt="" id="post-img" />
+          </div>
+
+          <div class="comments-counter">
+            <p>comments (3)</p>
+          </div>
+
+          <div class="comments">
+            <span class="cm">Comments</span>
+            <i class="fa-regular fa-comment"></i>
+          </div>
+        </div> -->
+      </div>
+      <!-- End posts section -->
+
+      <!-- Start comment section -->
+
+      <div class="comment-section">
+        <div class="organize-comments">
+          <div class="img-side">
+            <img
+              src="/imgs/defaultProfile.jpg"
+              alt=""
+              class="user-img-comment"
+            />
+          </div>
+          <div class="comments-side">
+            <div id="post-comments">
+              <h1>Post comments</h1>
+            </div>
+            <div id="all-comments">
+              <!-- <div id="comment">
+                <div class="comment-profile">
+                  <img src="/imgs/default profile.jpg" alt="" />
+                </div>
+                <div class="the-comment">
+                  <div class="comment-name">
+                    <h3>Facebook</h3>
+                    <p class="author">Author</p>
+                  </div>
+                  <div class="single-comment">
+                    <p>Hello World</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="comment-input">
+              <div>
+                <input
+                  type="text"
+                  id="comment-text-input"
+                  placeholder="Post your comment"
+                />
+                <button id="send-comment">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End comment section -->
+    </main>
+
+    <script src="/JS/home.js"></script>
+  </body>
+</html>

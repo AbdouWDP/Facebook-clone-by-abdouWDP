@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <script
+      src="https://kit.fontawesome.com/38bd4d5857.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <!-- logged out alert -->
+
+    <!-- logged out alert -->
+
+    <div class="form">
+      <section class="login-form">
+        <form action="" class="login">
+          <div class="inputs">
+            <div class="login-email">
+              <input
+                type="text"
+                id="login-username"
+                name="username"
+                placeholder="Username"
+                value="AbdouIsHere"
+              />
+            </div>
+            <div class="login-password">
+              <input
+                name="password"
+                type="password"
+                id="login-password"
+                placeholder="Password"
+                value="123456"
+              />
+            </div>
+          </div>
+          <div class="connect">
+            <span>Log in</span>
+          </div>
+          <div class="forgot-password">
+            <a href="">Forgot password?</a>
+          </div>
+          <div class="divide"></div>
+          <div class="create-account-btn">
+            <div class="create-new-account">
+              <span>Create new account</span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="signup-form">
+        <form action="" class="signup">
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="organize">
+            <h1>Sign Up</h1>
+            <div class="divider"></div>
+            <div class="names">
+              <input
+                type="text"
+                id="signup-name"
+                placeholder="Name"
+                name="name"
+              />
+            </div>
+            <div class="signup-username">
+              <input
+                type="text"
+                id="signup-username"
+                placeholder="Username"
+                name="username"
+              />
+            </div>
+            <div class="signup-password">
+              <input
+                type="password"
+                name="password"
+                id="signup-password"
+                placeholder="New password"
+              />
+            </div>
+            <div id="signup-btn">
+              <button class="signup-btn" type="submit">
+                <span>Sign Up</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="/JS/login.js"></script>
+  </body>
+</html>
