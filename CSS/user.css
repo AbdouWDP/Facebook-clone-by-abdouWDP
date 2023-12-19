@@ -418,7 +418,7 @@ main {
 
 /* Large Mobile */
 
-@media (max-width: 568px) {
+@media (max-width: 578px) {
   .profile-section,
   .divide,
   .user-posts {
