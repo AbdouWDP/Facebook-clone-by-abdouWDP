@@ -435,6 +435,10 @@ main {
   .organize::-webkit-scrollbar {
     display: none;
   }
+  .see-profile-picture {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 /* Small Mobile */
@@ -464,5 +468,9 @@ main {
   }
   .posts-comments-counter span b {
     font-size: 20px;
+  }
+  .see-profile-picture {
+    width: 300px;
+    height: 300px;
   }
 }
