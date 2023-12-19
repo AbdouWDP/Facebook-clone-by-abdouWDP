@@ -457,7 +457,8 @@ main {
 /* Small Mobile */
 
 @media (max-width: 375px) {
-  .user-posts {
+  .user-posts,
+  .divide {
     width: 95%;
   }
   .post-buttons {
