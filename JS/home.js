@@ -260,7 +260,7 @@ logout_btn.addEventListener("click", () => {
     localStorage.removeItem("token");
     localStorage.removeItem("cursor_location");
     localStorage.removeItem("user");
-    location.href = "/login.html";
+    location.href = "/index.html";
   }
 });
 
