@@ -393,9 +393,3 @@ close_comments.addEventListener("click", () => {
   });
   getPosts();
 });
-
-function clearCache() {
-  caches.open();
-  Cache.delete();
-}
-clearCache();
