@@ -104,19 +104,19 @@ async function getPosts() {
                 <div class="post-date">${p.created_at}</div>
               </div>
               <div class="post-buttons">
-                <button class="choose-button" type="button" role="choose-post-properety">
+                <button class="choose-button" type="button">
                   <i class="fa-solid fa-ellipsis"></i>
                 </button>
                 <div class="buttons">
                   <button class="update-post" onclick="updatePost(${
                     p.id
-                  })" type="button" role="update-post-button">
+                  })" type="button">
                     <i class="fa-solid fa-arrows-rotate"></i>
                     <span>Update post</span>
                   </button>
                   <button class="delete-post" onclick="deletePost(${
                     p.id
-                  })" type="button" role="delete-post-button">
+                  })" type="button">
                     <i class="fa-solid fa-trash"></i>
                     <span>Delete post</span>
                   </button>
