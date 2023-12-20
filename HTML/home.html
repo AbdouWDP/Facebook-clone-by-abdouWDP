@@ -30,7 +30,9 @@
       <!-- Post added successfully -->
 
       <!-- Logout button -->
-      <button id="logout-button" type="button">Logout</button>
+      <button id="logout-button" type="button" role="logout*button">
+        Logout
+      </button>
       <!-- End logout button -->
 
       <!-- Start add post section -->
@@ -63,7 +65,9 @@
             />
           </div>
           <div id="publish">
-            <button id="publish-btn" type="button">publish</button>
+            <button id="publish-btn" type="button" role="post-button">
+              publish
+            </button>
           </div>
         </div>
       </div>
@@ -190,7 +194,11 @@
                   id="comment-text-input"
                   placeholder="Post your comment"
                 />
-                <button id="send-comment" type="button">
+                <button
+                  id="send-comment"
+                  type="button"
+                  role="post-comment-button"
+                >
                   <i class="fa-solid fa-paper-plane"></i>
                 </button>
               </div>
