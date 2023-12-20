@@ -395,6 +395,7 @@ close_comments.addEventListener("click", () => {
 });
 
 function clearCache() {
-  window.location.reload(true);
+  caches.open();
+  Cache.delete();
 }
 clearCache();
