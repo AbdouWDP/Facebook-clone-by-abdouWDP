@@ -393,3 +393,8 @@ close_comments.addEventListener("click", () => {
   });
   getPosts();
 });
+
+function clearCache() {
+  window.location.reload(true);
+}
+clearCache();
