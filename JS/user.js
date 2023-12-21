@@ -36,10 +36,10 @@ function postAddedModal(el, message, color) {
 function fillUser() {
   let url = new URLSearchParams(location.search);
   let userId = url.get("user_id");
-  fetch("https://tarmeezacademy.com/api/v1/users/" + userId)
-    .then((response) => response.json())
+  axios
+    .get("https://tarmeezacademy.com/api/v1/users/" + userId)
     .then((json) => {
-      let data = json.data;
+      let data = json.data.data;
       let profile_picture = data.profile_image;
       posts_counter.innerHTML = `<b>${data.posts_count}</b> posts`;
       comments_counter.innerHTML = `<b>${data.comments_count}</b>comments`;
@@ -55,11 +55,11 @@ function fillUser() {
 function getUserPosts() {
   let url = new URLSearchParams(location.search);
   let userId = url.get("user_id");
-  fetch(`https://tarmeezacademy.com/api/v1/users/${userId}/posts`)
-    .then((res) => res.json())
+  axios
+    .get(`https://tarmeezacademy.com/api/v1/users/${userId}/posts`)
     .then((res) => {
       loader.style.display = "none";
-      let posts = res.data;
+      let posts = res.data.data;
       let reversed_posts = posts.reverse();
       user_posts.innerHTML = "";
       for (post of reversed_posts) {
